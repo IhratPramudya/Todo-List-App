@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APPS</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+</head>
+<body>
+    <div class="jumbotron">
+        <div class="banner">
+            <h4>Todo List</h4>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="card-content">
+                <div class="title">
+                    <h4>Tambah yang harus di lakukan</h4><br>
+                </div>
+                <form id="submit-form">
+                    <div class="form-group">
+                        
+                            <div class="form-control">
+                                <label for="tugas">Masukkan hal yang harus di lakukan</label><br>
+                                <input id="tugas" type="text" name="tugas" placeholder="contoh back end">
+                            </div>
+
+                            <div class="form-control">
+                                <label for="tanggal">Masukkan tanggal harus selesai</label><br>
+                                <input type="date" name="tanggal" id="tanggal">
+                            </div>
+
+                            <div class="form-control">
+                                <button type="submit" id="submitElement">Submit</button>
+                            </div>
+
+
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="card-content">
+                <div class="title-two">
+                    <h4>Yang harus dilakukan</h4>
+                </div>
+                <div class="group" id="add_control">
+                    <!-- <div class="control">
+                        <div class="content-left">
+                            <h4>Tugas Backend</h4>
+                            <p>2021-05-17</p>
+                        </div>
+                        <div class="content-right">
+                            <span class="material-symbols-outlined">
+                                check_circle
+                                </span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+            <div class="card-content">
+                <div class="title-two">
+                    <h4>Yang sudah dilakukan</h4>
+                </div>
+                <div class="group" id="add_control_complite">
+                    <!-- <div class="control">
+                        <div class="content-left">
+                            <h4>Tugas Backend</h4>
+                            <p>2021-05-17</p>
+                        </div>
+                        <div class="content-right">
+                            <span class="material-symbols-outlined" >
+                                refresh
+                                </span>
+                                <span class="material-symbols-outlined">
+                                    delete
+                                    </span>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+
+
+            <div class="card-content">
+                <div class="title-two">
+                    <h4 align="center">History Data</h4>
+                </div>
+                <div class="group" id="add_control_delete">
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="scripts/app.js">
+
+    </script>
+</body>
+</html>
