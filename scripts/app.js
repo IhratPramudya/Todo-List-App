@@ -217,14 +217,14 @@ function completeCheckIscomplete(todoID){
    
 }
 
-function findTodo(todosId){
-    for(let itemTodos of todos){
-        if(todosId == itemTodos.id){
-            return itemTodos;
-        }else{
-            return null;
-        }
+function undoIscomplete(todosID){
+    const todoLIstTodos = findTodo(todosID);
+    if(todoLIstTodos == null){
+        return;
     }
+
+    todoLIstTodos.isComplete = false;
+    document.dispatchEvent(new Event(PREVENT));
 }
 
 
